@@ -15,7 +15,7 @@ var puerto =  process.env.PORT || 3000;
 server.use(express.static('public'));
 
 server.get("/",(req, res) =>{
-    data = {};
+    var data = {};
     data.pry = "JSON on server";
     data.version = "0.001 alpha";
     res.json(data);
